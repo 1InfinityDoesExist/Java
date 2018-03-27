@@ -1,0 +1,26 @@
+class Outer {
+	int count;
+
+	void display() {
+		Inner in = new Inner();
+		in.show();
+	}
+
+	class Inner {
+		void show() {
+			System.out.println("The count is : " + ++count);
+		}
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		Outer o = new Outer();
+		o.display();
+		// Outer out = new Outer();
+		// Outer.Inner in = out.new Inner();
+		// in.show();
+	}
+}
