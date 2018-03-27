@@ -1,0 +1,27 @@
+package JavaTutorial;
+
+public class firstProgram {
+	public static void main(String[] args) {
+		int[] array = new int[5];
+		for (int iter = 0; iter < 5; iter++) {
+			array[iter] = iter + 1;
+		}
+		// display the elements of array
+		// foreach or enhanced for loop
+		for (int x : array) {
+			System.out.println(x);
+		}
+		System.out.println();
+		int arr[] = new int[5];
+		for (int iter = 0; iter < 5; iter++) {
+			array[iter] = iter + 1;
+		}
+		// display the elements of array
+		// foreach or enhanced for loop
+		for (int x : array) {
+			System.out.println(x);
+		}
+		System.out.println();
+	}
+
+}

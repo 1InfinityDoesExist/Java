@@ -1,0 +1,20 @@
+interface car {
+	int speed = 40;
+
+	void show();
+}
+
+class BMW implements car {
+	public void show() {
+		System.out.println("The speed of BMW is :" + speed);
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		BMW b = new BMW();
+		b.show();
+	}
+}

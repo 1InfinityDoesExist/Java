@@ -1,0 +1,31 @@
+interface car {
+	int speed = 40;
+
+	void show();
+}
+
+interface sar {
+	int type = 45;
+
+	void blow();
+}
+
+class BMW implements car, sar {
+	public void show() {
+		System.out.println("The speed of BMW is :" + speed);
+	}
+
+	public void blow() {
+		System.out.println("The type of sar is :" + type);
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		BMW b = new BMW();
+		b.show();
+		b.blow();
+	}
+}

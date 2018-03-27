@@ -1,0 +1,19 @@
+package JavaTutorial;
+
+public class firstProgram {
+	public void sum(int x, int y) {
+		System.out.println(" The sum is " + (x + y));
+	}
+
+	public void sum(int x, int y, int z) {
+		System.out.println(" The sum is " + (x + y + z));
+	}
+
+	public static void main(String[] args) {
+		firstProgram fs = new firstProgram();
+		fs.sum(5, 20);
+		fs.sum(10, 20, 30);
+
+	}
+
+}

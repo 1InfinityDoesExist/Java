@@ -1,0 +1,25 @@
+class Car {
+	String name;
+
+	public Car(String n) {
+		name = n;
+	}
+}
+
+public class Test extends Car {
+	String name;
+
+	public Test(String s1, String s2) {
+		super(s1);
+		this.name = s2;
+	}
+
+	public void display() {
+		System.out.println(super.name + " \n" + this.name);
+	}
+
+	public static void main(String[] args) {
+		Test t = new Test("BMW", "child");
+		t.display();
+	}
+}

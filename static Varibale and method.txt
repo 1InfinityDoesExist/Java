@@ -1,0 +1,15 @@
+package JavaTutorial;
+
+//instance of a class is not necessary when you varibale and method is static.....
+public class firstProgram {
+	static int x;
+
+	public static void show() {
+		System.out.println("The value of x is : " + x);
+	}
+
+	public static void main(String[] args) {
+		x = 10;
+		show();
+	}
+}

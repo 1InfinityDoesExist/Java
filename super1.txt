@@ -1,0 +1,23 @@
+class Car {
+	String name;
+
+	public void display() {
+		name = "Parent";
+		System.out.println(name);
+	}
+}
+
+public class Test extends Car {
+	String name;
+
+	public void show2() {
+		super.display();
+		name = "class";
+		System.out.println(name);
+	}
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		t.show2();
+	}
+}

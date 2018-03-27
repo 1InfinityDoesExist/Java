@@ -1,0 +1,38 @@
+class Car {
+	String name;
+	int size;
+	String model;
+
+	Car(String s, int z, String k) {
+		this.name = s;
+		this.size = z;
+		this.model = k;
+	}
+}
+
+class Design {
+	String str;
+	int kter;
+	Car c;
+
+	Design(String s, int kt, Car k) {
+		this.str = s;
+		this.kter = kt;
+		this.c = k;
+	}
+
+	public void display() {
+		System.out.println(this.str + "  " + this.kter + "  " + c.model);
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		Car c = new Car("cc", 80, "kk");
+		Design d = new Design("rupesh", 50, c);
+		d.display();
+
+	}
+}

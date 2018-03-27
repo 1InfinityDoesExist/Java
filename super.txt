@@ -1,0 +1,19 @@
+class Car {
+	String name;
+}
+
+public class Test extends Car {
+	String name;
+
+	public void show2() {
+		super.name = "Purana";
+		name = "BMW";
+		System.out.println("This is my car is " + super.name + " is " + name);
+	}
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		t.show2();
+	}
+
+}
