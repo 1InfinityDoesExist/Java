@@ -1,0 +1,18 @@
+import java.util.Enumeration;
+import java.util.Vector;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Vector<String> ve = new Vector<String>();
+		ve.add("Anamika");
+		ve.add("Zomal");
+		ve.add("Susma");
+		ve.add("Tina");
+
+		Enumeration<String> en = ve.elements();
+		while (en.hasMoreElements()) {
+			System.out.println(en.nextElement());
+		}
+	}
+}
