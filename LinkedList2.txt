@@ -1,0 +1,41 @@
+import java.util.LinkedList;
+import java.util.ListIterator;
+
+class Contact {
+	String firstName;
+	String lastName;
+	String phoneNumber;
+
+	Contact(String fn, String ln, String pn) {
+		this.firstName = fn;
+		this.lastName = ln;
+		this.phoneNumber = pn;
+	}
+
+	public String toString() {
+		return firstName + " " + lastName + " " + phoneNumber;
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		Contact c1 = new Contact("Dimple", "Agrawal", "8452136598");
+		Contact c2 = new Contact("Bharti", "Saini", "845216598");
+		Contact c3 = new Contact("Neha", "Kandapal", "9952136598");
+
+		LinkedList<Contact> ls = new LinkedList<Contact>();
+		ls.add(c1);
+		ls.add(c2);
+		ls.add(c3);
+
+		System.out.println(ls + "\n");
+
+		ListIterator iter = ls.listIterator();
+		while (iter.hasNext()) {
+			System.out.print(iter.next() + " ");
+		}
+
+	}
+
+}

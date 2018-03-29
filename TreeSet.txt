@@ -1,0 +1,19 @@
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class Test {
+	public static void main(String[] args) {
+		TreeSet<String> ts = new TreeSet<String>();
+		ts.add("Ramesh");
+		ts.add("Dimple");
+		ts.add("Simple");
+		ts.add("Killer");
+		ts.add("Serial");
+
+		System.out.println(ts);
+		Iterator iter = ts.iterator();
+		while (iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+	}
+}

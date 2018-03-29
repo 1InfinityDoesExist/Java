@@ -1,0 +1,29 @@
+import java.util.Iterator;
+import java.util.PriorityQueue;
+
+public class Test {
+	public static void main(String[] args) {
+		PriorityQueue<String> ps = new PriorityQueue<String>();
+		ps.add("We");
+		ps.add("Priority");
+		ps.add("Youth");
+		ps.add("Source");
+
+		System.out.println(ps);
+
+		Iterator iter = ps.iterator();
+		while (iter.hasNext()) {
+			System.out.print(iter.next() + " ");
+		}
+
+		System.out.println(ps.element());
+		System.out.println(ps.peek());
+
+		ps.remove();
+		System.out.println(ps);
+
+		ps.poll();
+		System.out.println(ps);
+
+	}
+}

@@ -1,0 +1,22 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class Test {
+
+	public static void main(String[] args) {
+		HashMap<String, Integer> hm = new HashMap<String, Integer>();
+		hm.put("a", new Integer(1000));
+		hm.put("l", new Integer(2000));
+		hm.put("m", new Integer(1005));
+		hm.put("k", new Integer(2500));
+
+		Set<Map.Entry<String, Integer>> st = hm.entrySet();
+		for (Map.Entry<String, Integer> me : st) {
+			System.out.print(me.getKey() + " --->");
+			System.out.println(me.getValue());
+		}
+
+	}
+
+}
