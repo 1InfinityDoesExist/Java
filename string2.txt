@@ -1,0 +1,47 @@
+public class Reading {
+	public static void main(String[] args) {
+		String str = "Dimple";
+		int sum = 45;
+
+		// charAt(valid index)
+		System.out.println(str.charAt(2));
+
+		// length
+		System.out.println(str.length());
+
+		// equalsIgnoreCase
+		System.out.println(str.equalsIgnoreCase("Dimple"));
+
+		// trim
+		String trimmer = "      Dimple K      ";
+		System.out.println(trimmer.trim());
+
+		// valueOf
+		String s = String.valueOf(sum);
+		System.out.println(s);
+
+		// toUpperCase // toLowerCase;
+		String u = "UPPER";
+		String l = "lowering";
+		System.out.println(u.toLowerCase());
+		System.out.println(l.toLowerCase());
+
+		// substring
+		String number = "0123456789";
+		System.out.println(number.substring(4));
+		System.out.println(number.substring(4, 8));
+
+		// int indexOf(char, int);
+		// int indexOf(char);
+		// indexOf(substr, int);
+		// indexOf(substr);
+
+		String strring = "KingD Kom";
+		System.out.println(strring.indexOf('K'));
+		System.out.println(strring.indexOf('K', 4));
+		String subString = "ing";
+		System.out.println(strring.indexOf("ing"));
+		System.out.println(strring.indexOf("ing", 1));
+
+	}
+}

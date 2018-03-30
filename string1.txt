@@ -1,0 +1,56 @@
+public class Reading {
+	public static void main(String[] args) {
+		// string literal
+		String str = "Dimple";
+		System.out.println(str);
+
+		String s = new String(str);
+		System.out.println(s);
+
+		String ss = new String("Bharti");
+		System.out.println(ss);
+		// == has exception.....
+
+		String b = "Bharti";
+		String c = "Dimple";
+		String d = "Dimple";
+		String p = "Puja";
+
+		String bB = new String(b);
+		String dD = new String(d);
+		String pP = new String(p);
+
+		if (c == dD) {// Its because we are creating a new object using new
+						// operator, and thus it gets created in a non-pool
+						// memory area of the heap
+			System.out.println("Yes Dimple its equal");
+		} else {
+			System.out.println("No  Dimple its not equal");
+		}
+
+		if (c == d) {
+			System.out.println("Yes Dimple its equal");
+		} else {
+			System.out.println("No  Dimple its not equal");
+		}
+
+		// compareTO operator
+
+		System.out.println(d.compareTo(dD));
+		System.out.println(d.compareTo(c));
+
+		if (str.equals(s)) {
+			System.out.println("Yes its equal");
+		} else {
+			System.out.println("No its not equal");
+		}
+
+		if (str == ss) {
+			System.out.println("Yes its equal");
+		} else {
+			System.out.println("No its not equal");
+		}
+
+		System.out.println(str.compareTo(ss));
+	}
+}
