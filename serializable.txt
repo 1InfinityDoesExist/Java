@@ -1,0 +1,30 @@
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class StudentInfo implements Serializable {
+	String name;
+	int rid;
+	static String contact;
+
+	StudentInfo(String n, int r, String con) {
+		this.name = name;
+		this.rid = r;
+		this.contact = con;
+	}
+}
+
+public class Reading {
+	public static void main(String[] args) {
+		try {
+			StudentInfo si = new StudentInfo("Dimple", 80, "98545685");
+			FileOutputStream foo = new FileOutputStream("object.ser");
+			ObjectOutputStream oos = new ObjectOutputStream(foo);
+			oos.writeObject(si);
+			oos.close();
+			foo.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
