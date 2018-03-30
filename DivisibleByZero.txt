@@ -1,0 +1,13 @@
+public class Reading {
+	public static void main(String[] args) {
+		try {
+			int x = 0;
+			int y = 40;
+			int rem = y / x;
+
+		} catch (ArithmeticException e) {
+			System.out.print("Divisible By Zero");
+		}
+
+	}
+}
