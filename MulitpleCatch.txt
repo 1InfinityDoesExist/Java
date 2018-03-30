@@ -1,0 +1,15 @@
+public class Reading {
+	public static void main(String[] args) {
+		try {
+			int arr[] = { 1, 2 };
+			int x = 0;
+			int y = 40;
+			int rem = arr[1] / x;
+
+		} catch (ArithmeticException e) {
+			System.out.print("Divisible By Zero");
+		} catch (ArrayIndexOutOfBoundsException ae) {
+			System.out.print("Array say bahar ja raha hey");
+		}
+	}
+}
