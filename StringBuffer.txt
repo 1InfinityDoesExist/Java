@@ -1,0 +1,30 @@
+public class Reading {
+	public static void main(String[] args) {
+		String str = "Dimple";
+		str.concat("Agrawal");
+		System.out.println(str);// where the hell is Agrawal...
+
+		StringBuffer s = new StringBuffer("Bharti");
+		s.append(" Saini");
+		System.out.println(s);
+
+		// insert
+		StringBuffer ss = new StringBuffer("Elephant");
+		System.out.println(ss.insert(4, "hello"));
+
+		// reverse
+		StringBuffer sk = new StringBuffer("DimpleAgrawal");
+		System.out.println(sk.reverse());
+
+		// replace
+		StringBuffer ssk = new StringBuffer("Kaplan");
+		System.out.println(ssk.replace(4, 5, "shiker"));
+		// capacity
+		StringBuffer br = new StringBuffer();
+		System.out.println(br.capacity());
+
+		br.ensureCapacity(30);
+		System.out.println(br.capacity());
+
+	}
+}
