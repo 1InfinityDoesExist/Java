@@ -1,0 +1,16 @@
+
+//conversion from string to StringBuffer / StringBuilder
+
+public class Reading {
+	public static void main(String[] args) {
+		String str = "Dimple";
+		StringBuffer br = new StringBuffer(str);
+		br.reverse();
+		System.out.println(br);
+
+		StringBuilder dr = new StringBuilder(str);
+		dr.append(" Agrawal");
+		System.out.println(dr);
+
+	}
+}

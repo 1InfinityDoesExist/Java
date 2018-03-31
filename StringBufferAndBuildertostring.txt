@@ -1,0 +1,20 @@
+
+//conversion from  StringBuffer / StringBuilder to string
+
+public class Reading {
+	public static void main(String[] args) {
+		StringBuffer br = new StringBuffer("Dimple");
+		String str = br.toString();
+		System.out.println(str);
+
+		String ktr = str + " Agrawal";// only Dimple no Agrawal
+		// str += "Agrawal";
+		System.out.println(ktr);
+
+		String ss = "Bharit";
+		StringBuilder dr = new StringBuilder(ss);
+		String cp = dr.toString();
+		System.out.println(cp);
+
+	}
+}

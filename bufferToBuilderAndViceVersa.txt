@@ -1,0 +1,12 @@
+
+public class Reading {
+	public static void main(String[] args) {
+		StringBuffer br = new StringBuffer("Dimple");
+		String str = br.toString();
+		StringBuilder dr = new StringBuilder(str);
+		dr.append(" Agrawal");
+		System.out.println(dr);
+		
+		
+	}
+}
