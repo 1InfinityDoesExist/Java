@@ -1,0 +1,19 @@
+import java.io.IOException;
+import java.util.Vector;
+
+public class Reading {
+	public static void main(String[] args) throws IOException {
+
+		Vector v = new Vector();
+		v.add(1);
+		v.add(2);
+		v.add("Bharti");
+		v.add("Dimple");
+		v.add("Agrawal");
+		v.add("Saini");
+		v.add(4.45);
+		v.add('A');
+		System.out.println(v);
+
+	}
+}
