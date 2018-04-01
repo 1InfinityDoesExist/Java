@@ -1,0 +1,40 @@
+import java.io.IOException;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Reading {
+	public static void main(String[] args) throws IOException {
+		Map hm = new TreeMap();
+
+		System.out.println(hm);// when it is empty...
+
+		hm.put(" Dimple ", 196);
+		hm.put(" Neha ", 2996);
+		hm.put(" Simple ", 96);
+		hm.put(" Ritika ", 1996);
+		hm.put(" Pimple ", 199);
+		hm.put(" Neharika ", 996);
+
+		System.out.println(hm);
+
+		System.out.println(hm.size());// Non-empty hm
+
+		// containsKey
+		if (hm.containsKey("Sneha")) {
+			System.out.println(hm.get("Sneha"));
+		} else {
+			System.out.println("kuch nahi milega try kar k");
+		}
+
+		// clear
+		hm.clear();
+
+		// isEmpty
+		if (hm.isEmpty()) {
+			System.out.println("Abey khali hey...");
+		} else {
+			System.out.println("Chrikut khali nahi..hey..kuch to hey....");
+		}
+
+	}
+}
