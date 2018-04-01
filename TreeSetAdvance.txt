@@ -1,0 +1,39 @@
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.TreeSet;
+
+public class Reading {
+	public static void main(String[] args) throws IOException {
+		ArrayList<Integer> ai = new ArrayList<Integer>();
+		ai.add(2);
+		ai.add(5);
+		ai.add(20);
+		ai.add(54);
+		ai.add(28);
+		ai.add(59);
+
+		TreeSet ts = new TreeSet(ai);
+		System.out.println(ts);
+
+		// ts.clear();
+		// System.out.println(ts);
+
+		// contains
+		System.out.println(ts.contains(20));
+
+		// first
+		System.out.println(ts.first());
+
+		// second
+		System.out.println(ts.last());
+
+		// heahSet
+		System.out.println(ts.headSet(5));
+
+		// tailSet
+		System.out.println(ts.tailSet(5));
+
+		// subset
+		System.out.println(ts.subSet(2, 59));
+	}
+}
