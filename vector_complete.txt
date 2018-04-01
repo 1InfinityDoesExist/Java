@@ -1,0 +1,78 @@
+
+//object clone vector
+import java.io.IOException;
+import java.util.Vector;
+
+public class Reading {
+	public static void main(String[] args) throws IOException {
+		Vector v = new Vector();
+		Vector v_clone = new Vector(12);
+		v.add(1);
+		v.add(2);
+		v.add("Bharti");
+		v.add("Dimple");
+		v.add("Agrawal");
+		v.add("Saini");
+		v.add(4.45);
+		v.add('A');
+		v.add(1);
+		v.add(2);
+		v.add(1);
+		v.add(2);
+		System.out.println(v);
+
+		// firstElement // lastElement
+		System.out.println("First Element " + v.firstElement());
+		System.out.println("Last Element " + v.lastElement());
+
+		// toStirng
+		String str = v.toString();
+		System.out.println(str);
+		System.out.println("Uper Dekh");
+
+		v_clone = (Vector) v.clone();
+		System.out.println(v_clone);
+
+		// contain
+		if (v.contains("Bharti")) {
+			System.out.println("Hey");
+		} else {
+			System.out.println("No");
+		}
+		// ensureCapacity
+		// v.ensureCapacity(10);
+		System.out.println(v.capacity());
+		// get
+		System.out.println(v.get(2));
+		// indexOf
+		System.out.println(v.indexOf(3));
+		// lastindexOf
+		System.out.println(v.lastIndexOf(2));
+		// remvove
+		System.out.println("Hatane ke bad" + v.remove(2));
+		System.out.println(v);
+
+		// copyInto
+		Integer[] arr = new Integer[12];
+		// v.copyInto(arr);
+
+		// removeElement
+		v.removeElement(2); // only revove the first 2 rest stays as they are...
+		System.out.println("ye hey remvoeElement " + v);
+
+		for (Integer x : arr) {
+			System.out.println(x);
+		}
+
+		// clear
+		v.clear();
+		System.out.println(v);
+
+		// isEmpty
+		if (v.isEmpty()) {
+			System.out.println("Abay khali hey");
+		} else {
+			System.out.println("kuch to hey");
+		}
+	}
+}
