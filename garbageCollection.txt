@@ -1,0 +1,18 @@
+//garbage collection...
+public class Reading {
+	public static void main(String[] args) throws InterruptedException {
+		Reading r1 = new Reading();
+		Reading r2 = new Reading();
+
+		r1 = null;
+		System.gc();
+
+		r2 = null;
+		Runtime.getRuntime().gc();
+	}
+
+	protected void finalize() throws Throwable {
+		System.out.println("Thrown");
+		System.out.println("Thows too");
+	}
+}
