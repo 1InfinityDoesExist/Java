@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.util.LinkedHashSet;
+
+public class Reading {
+	public static void main(String[] args) throws IOException {
+		LinkedHashSet lhs = new LinkedHashSet();
+		lhs.add("Rajiv");
+		lhs.add('K');
+		lhs.add(5);
+		lhs.add(7.58);
+
+		System.out.println(lhs);
+		System.out.println(lhs.size());
+		System.out.println(lhs.contains("Rajiv"));
+		lhs.remove("Rajiv");
+		System.out.println(lhs);
+	}
+}
