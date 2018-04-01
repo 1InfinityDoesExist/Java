@@ -1,0 +1,34 @@
+import java.io.IOException;
+import java.util.ArrayList;
+
+//garbage collection...
+public class Reading {
+	public static void main(String[] args) throws IOException {
+		ArrayList<Integer> arri = new ArrayList<Integer>();
+		arri.add(2);
+		arri.add(4);
+		arri.add(10);
+		arri.add(14);
+		arri.add(19);
+		arri.add(24);
+
+		for (int iter = 25; iter < 30; iter++) {
+			arri.add(iter);
+		}
+
+		// Enhanced for loop....
+		for (Integer x : arri) {
+			System.out.println(x);
+		}
+		// Print in single line.....
+		System.out.println(arri);
+
+		arri.remove(0);
+		System.out.println(arri);
+		//get
+		for (int iter = 0; iter < arri.size(); iter++) {
+			System.out.print(arri.get(iter) + " ");
+		}
+
+	}
+}
