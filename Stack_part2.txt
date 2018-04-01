@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.util.Stack;
+
+public class Reading {
+	public static void main(String[] args) throws IOException {
+		Stack st = new Stack();
+		st.push("Dimple");
+		st.push("Akriti");
+		st.push("Neha");
+		st.push(4.25);
+		st.push('A');
+		st.push(5);
+		System.out.println(st);
+		st.pop();
+		System.out.println(st);
+		System.out.println(st.peek());
+		if (st.isEmpty()) {
+			System.out.println("Stack is Empty");
+		} else {
+			System.out.println("Stack is not Empty");
+		}
+		st.add("Neha");
+		if (st.search("Neha") == 1) {
+			System.out.println("Milgaya");
+		} else {
+			System.out.println("Nahi Mila");
+		}
+		System.out.println(st);
+	}
+}
