@@ -1,0 +1,75 @@
+import java.io.IOException;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
+
+public class Reading {
+	public static void main(String[] args) throws IOException {
+		Deque<Integer> dq = new ArrayDeque<Integer>();
+		// add
+		dq.add(35);
+		dq.add(50);
+		dq.add(15);
+		dq.add(51);
+		dq.add(45);
+		dq.add(52);
+		dq.add(35);
+		dq.add(55);
+		dq.add(45);
+		dq.add(56);
+		dq.add(25);
+		dq.add(57);
+		dq.add(55);
+		dq.add(58);
+		dq.add(15);
+		dq.add(59);
+		// advanced for loop
+		System.out.println(dq);
+		for (Integer element : dq) {
+			System.out.print(element + " ");
+		}
+		System.out.println();
+		// addFirst and addLast
+		dq.addFirst(2);
+		dq.addLast(24);
+		// advanced for loop
+		for (Integer element : dq) {
+			System.out.print(element + " ");
+		}
+		// size()
+		System.out.println();
+		System.out.println(dq.size());
+		// getFirst and getLast
+		System.out.println(dq.getFirst());
+		System.out.println(dq.getLast());
+		// contains
+		if (dq.contains(2)) {
+			System.out.println("hey wo hey aandar he hey");
+		} else {
+			System.out.println("Bhai wo aanadar nahi..hey ");
+		}
+		// isEmpty
+		if (dq.isEmpty()) {
+			System.out.println("Abay khali hey");
+		} else {
+			System.out.println("Abay khali nahi...hey...");
+		}
+		// Iterator
+		for (Iterator iter = dq.iterator(); iter.hasNext();) {
+			System.out.print(iter.next() + "  ");
+		}
+		// descendingIterator
+		System.out.println();
+		for (Iterator iter = dq.descendingIterator(); iter.hasNext();) {
+			System.out.print(iter.next() + "  ");
+		}
+		System.out.println();
+		// element
+		System.out.println(dq.element());
+		// toArray
+		Object[] arr = dq.toArray();
+		for (int iter = 0; iter < arr.length; iter++) {
+			System.out.print(" " + arr[iter]);
+		}
+	}
+}
