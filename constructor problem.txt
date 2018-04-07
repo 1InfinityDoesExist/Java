@@ -1,0 +1,22 @@
+
+package JavaTutorial;
+
+class A{
+	A(){
+		this(x:0);
+		System.out.println("hey i am first one " );
+	}
+	A(int x){
+		this(x : 2, y : 5);
+		System.out.println("hey i am second one");
+	}
+	A(int x, int y){
+		System.out.println("hey i am third one");
+	}
+}
+
+public class firstProgram {
+	public static void main(String[] args) {
+		A obj = new A();
+	}
+}

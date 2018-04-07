@@ -1,0 +1,49 @@
+package JavaTutorial;
+
+public class firstProgram {
+	public static void main(String[] args) {
+		StringBuilder sbr = new StringBuilder("Dimple");
+		sbr.append(" AGRAWAL");
+		// sbr.reverse();
+		System.out.println(sbr);
+
+		StringBuffer sbf = new StringBuffer("Dimple");
+		sbf.append(" agrawal");
+		System.out.println(sbf);
+
+		// Integer in = new Integer(25); //wrapper class.....
+
+		// .equals() ans ==
+		String sheker = "Neha";
+		String bikey = "NehA";
+
+		// == // datatyep behaviour
+		if (sheker == bikey) {
+			System.out.println("same hey");
+		} else {
+			System.out.println("same nahi...hey....");
+		}
+
+		// .equals() // behavs as datatype
+		if (sheker.equalsIgnoreCase(bikey)) {
+			System.out.println("same hey");
+		} else {
+			System.out.println("same nahi...hey....");
+		}
+		// String as class Bheaviour......
+		String ss = new String("NehA");
+		String sy = new String("Neha");
+		if (ss == sy) {
+			System.out.println("same hey");
+		} else {
+			System.out.println("same nahi...hey....");
+		}
+
+		if (ss.equalsIgnoreCase(sy)) {
+			System.out.println("same hey");
+		} else {
+			System.out.println("same nahi...hey....");
+		}
+
+	}
+}
