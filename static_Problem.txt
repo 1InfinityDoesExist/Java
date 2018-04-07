@@ -1,4 +1,41 @@
 
+
+/*
+
+package JavaTutorial;
+
+class A {
+	static int i = 100;
+	static { // static block is executed when object is loaded into the
+				// memeory....
+		i = i-- - --i;
+		System.out.println("The value of first  is ---> " + i);
+	}
+	{// is executed when you create an object of a class ....
+		i = i++ + ++i;
+		System.out.println("The value of second  is ---> " + i);
+	}
+}
+
+class B extends A {
+	static {
+		i = --i - i--;
+		System.out.println("The value of third is ---> " + i);
+	}
+	{
+		i = ++i + i++;
+		System.out.println("The value of fourth is ---> " + i);
+	}
+}
+
+public class firstProgram {
+	public static void main(String[] args) {
+		B obj = new B();
+		System.out.println(obj.i);
+
+	}
+}
+*/
 package JavaTutorial;
 
 class A {
