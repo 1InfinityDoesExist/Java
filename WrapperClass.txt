@@ -1,0 +1,16 @@
+package JavaTutorial;
+
+public class firstProgram {
+	public static void main(String[] args) {
+		int i = (10);
+		System.out.println(i);
+		Integer iRef = new Integer(i);// Boxing
+		System.out.println(iRef);
+		int j = iRef.intValue();// UnBoxing
+		System.out.println(j);
+		int kRef = i;// AutoBoxing
+		System.out.println(kRef);
+		int l = kRef;// AutoUnBoxing
+		System.out.println(l);
+	}
+}
