@@ -1,3 +1,4 @@
+
 package JavaTutorial;
 
 class Cricketer { // it cant be public only one public class in one file...i.e
@@ -45,3 +46,57 @@ public class firstProgram {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+package JavaTutorial;
+
+class A {// when you create a parameterised constructor by default default
+			// constructor is not made....
+	A() {// if you explicitly call a default one...it will be cretec by not
+			// called bye parameterised...
+		System.out.println("may hu main");
+	}
+
+	A(int x) {
+		System.out.println("The value of x is : " + x);
+	}
+}
+
+public class firstProgram {
+	public static void main(String[] args) {
+		A o = new A();
+		A obj = new A(5);
+	}
+}
+
+*/
