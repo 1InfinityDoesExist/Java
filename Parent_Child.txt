@@ -1,0 +1,36 @@
+
+package JavaTutorial;
+
+class Parent {
+	public static void display() {
+		System.out.println("Hi I am parent ka display");
+	}
+
+	public void show() {
+		System.out.println("Hi I am parent ka show");
+	}
+}
+
+class Child extends Parent {
+	public static void display() {
+		System.out.println("Hi I am child ka display");
+	}
+
+	public void show() {
+		System.out.println("Hi I am child ka show");
+	}
+}
+
+public class firstProgram {
+	public static void main(String[] args) {
+		Parent p = new Child();
+		Child c = new Child();
+
+		p.display();
+		c.display();
+
+		p.show();
+		c.show();
+
+	}
+}
