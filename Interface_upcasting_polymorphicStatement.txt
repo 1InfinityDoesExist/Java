@@ -1,0 +1,42 @@
+//Polymorphic statement also called upcasting.....
+//Parent P = new Child(); // upcating or polymorphic statement....
+package JavaTutorial;
+
+interface Shape { // Neither you Nor runtime can create object...
+	/*
+	 * Shape(){ //No constructor can be made...
+	 * System.out.println("Drawing Shape"); }
+	 */ // for abstract you can create it
+	void draw();
+}
+
+class Circle implements Shape {
+	public void draw() { //by default it is public abstract 
+		System.out.println("Drawing A Circle");
+	}
+}
+
+class Rectangle implements Shape {
+	public void draw() {
+		System.out.println("Drawing A Rectangle");
+	}
+}
+
+class Polygon implements Shape {
+	public void draw() {
+		System.out.println("Drawing A Polygon");
+	}
+}
+
+public class firstProgram {
+	public static void main(String[] args) {
+		Shape sRef = new Rectangle();
+		sRef.draw();
+
+		sRef = new Circle();
+		sRef.draw();
+		sRef = new Polygon();
+		sRef.draw();
+
+	}
+}
