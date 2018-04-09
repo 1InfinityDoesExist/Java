@@ -1,0 +1,20 @@
+//Queue-----> Interface
+package JavaTutorial;
+
+import java.util.Scanner;
+
+public class firstProgram {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] mark = new int[n];
+		for (int iter = 0; iter < n; iter++) {
+			mark[iter] = sc.nextInt();
+		}
+
+		for (Integer x : mark) {
+			System.out.println(x);
+		}
+	}
+
+}
