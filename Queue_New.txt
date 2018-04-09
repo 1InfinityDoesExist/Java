@@ -1,0 +1,35 @@
+//Queue-----> Interface
+package JavaTutorial;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class firstProgram {
+	public static void main(String[] args) {
+		Queue<Integer> q = new LinkedList<Integer>();// Queue q = new Integer();
+		q.add(2);
+		q.add(4);
+		q.add(14);
+		q.add(19);
+		q.add(24);
+		q.add(6);
+		System.out.println(q);
+		for (Integer x : q) {
+			System.out.print(x + " ");
+		}
+		System.out.println();
+		// System.out.println(q.remove(2));
+		System.out.println(q.poll());// poll means front
+
+		System.out.println(q.offer(5));
+		// System.out.println(q);//add at the last....
+		while (!q.isEmpty()) {
+			System.out.print(q.peek() + " ");
+			;
+			q.remove(q.poll());
+		}
+		System.out.println();
+		System.out.println(q.size());
+	}
+
+}
