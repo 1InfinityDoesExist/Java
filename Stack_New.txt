@@ -1,0 +1,36 @@
+
+package JavaTutorial;
+
+import java.util.Stack;
+
+class StackExample {
+
+}
+
+public class firstProgram {
+	public static void main(String[] args) {
+		Stack st = new Stack();// Stack<Wrapper Class> st = new Stack<Wrapper
+								// Class>();
+		st.push(2);
+		st.push(4);
+		st.push(14);
+		st.push(258);
+		st.push(54);
+
+		System.out.println(max(st));// comment this to go further...
+
+		while (!st.empty()) {
+			System.out.println(st.pop());
+		}
+	}
+
+	public static int max(Stack<Integer> s) {
+		int maxValue = s.pop();
+		while (!s.empty()) {
+			int next = s.pop();
+			maxValue = Math.max(next, maxValue);
+		}
+		return maxValue;
+
+	}
+}
