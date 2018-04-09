@@ -1,0 +1,28 @@
+//Queue-----> Interface
+package JavaTutorial;
+
+import java.util.HashMap;
+import java.util.Map;//sort ---> No duplicate
+import java.util.Set;
+
+public class firstProgram {
+	public static void main(String[] args) {
+		Map mp = new HashMap();
+		mp.put("Dimple", "Avinash");
+		mp.put("Agrawal", "Patel");
+		mp.put("Anu", "Gauhar");
+		mp.put("Shka", "Rehman");
+
+		System.out.println(mp);
+		// enhanced for loop.....
+		Set<String> ss = mp.keySet();
+		for (String key : ss) {
+			System.out.println(key + "  " + mp.get(key));
+		}
+		System.out.println(mp.size());// return the size of the map....
+		System.out.println(mp.containsKey("Shka"));// remove the key and value
+													// ...
+		System.out.println(mp);
+	}
+
+}
