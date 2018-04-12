@@ -1,0 +1,37 @@
+//Polymorphic Program......
+package JavaTutorial;
+
+class Animal {
+	void display() {
+		System.out.println("Kya ho tum");
+	}
+}
+
+class Cat extends Animal {
+	void display() {
+		System.out.println("May billi hu");
+	}
+}
+
+class Dog extends Animal {
+	void display() {
+		System.out.println("May kutta hu");
+	}
+}
+
+public class firstProgram {
+	public static void main(String[] args) {
+		Animal[] an = new Animal[2];
+		Dog d = new Dog();
+
+		Cat kt = new Cat();
+
+		an[0] = d;
+		an[1] = kt;
+
+		for (Animal a : an) {
+			a.display();
+
+		}
+	}
+}
