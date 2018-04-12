@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		Integer[] k = { 1, 2, 3, 4, 5, 6 };
+		Character[] ch = { 'c', 'd', 'i' };
+		Integer i = new Integer(10);
+		Scanner sc = new Scanner(System.in);
+		for (int iter = 0; iter < 10; iter++) {
+			i = sc.nextInt();
+			System.out.print(i + " ");
+		}
+		System.out.println();
+		printKar(k);
+		printKar(ch);
+	}
+//when you have to display for different data type... no need of building separate data...
+	public static <T> void printKar(T[] x) {
+		for (T d : x) {
+			System.out.print(d + " ");
+		}
+		System.out.println();
+	}
+}
