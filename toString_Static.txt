@@ -1,0 +1,25 @@
+class Details {
+	private String FirstName;
+	private String SecondName;
+	private static int member = 0;
+
+	public Details(String fName, String LName) {
+		this.FirstName = fName;
+		this.SecondName = LName;
+		member++;
+		System.out.println(this);
+		System.out.println(member);
+	}
+
+	public String toString() {
+		return String.format("%s %s", FirstName, SecondName);
+	}
+}
+
+public class Test {
+	public static void main(String[] args) {
+		Details d = new Details("Dimple", "Agrawal");
+		Details s = new Details("Shikher", "Shah");
+		// System.out.println(Details.member); // if not declare private....
+	}
+}
