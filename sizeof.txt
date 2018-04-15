@@ -1,0 +1,14 @@
+public class Test {
+	public static void main(String[] args) {
+		int x = 10;
+		byte y = (byte) x;
+		System.out.println("The size of Byte " + Byte.SIZE / 8);
+		System.out.println("The size of Integer " + Integer.SIZE / 8);
+		System.out.println("The size of Short " + Short.SIZE / 8);
+		System.out.println("The size of Character " + Character.SIZE / 8);
+		System.out.println("The size of Short " + Short.SIZE / 8);
+		System.out.println("The size of Float " + Float.SIZE / 8);
+		System.out.println("The size of Double " + Double.SIZE / 8);
+		System.out.println("The size of Long " + Long.SIZE / 8);
+	}
+}
