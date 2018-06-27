@@ -2,42 +2,56 @@
 //Differnce between abstract class and interface...
 package practise;
 
-abstract class abs{
-    abs(){}// 3. Abstract class can have construct...
-    int x = 2;// 2. Abstract class can have instance varibale...
-    abstract void display();
-    void show(){ // 1. abstract class can have method body...(only of non abstract method)
-        System.out.println("Kaise ho");
-    }
-    public static void dekha(){//4 . Abstract class can have static method...
-        System.out.println("ye hey static method");
-    }
+import java.io.*;
+import java.lang.*;
+import java.awt.*;
+import java.util.*;
+
+
+interface abs1{
+    //abs1(){} //3. Interface cannot have construct...
+                // if you add construct...you have to define body but interface cannot have body...or defination...
+    int x = 20;//2. Interface cannot have instance variable...
+  //  x = 40; // because by default they are static and final in java...
+    void display1();
+   // void public show(){}// 1. Interface cannot have method body...
+   // public static void sh(){}//4. Interface cannot have static method...
+}
+interface abs2{
+    int x = 40;
+    void display2();
+}
+interface abs3 extends abs1, abs2{//5. Interface extends mulitply interface...
+    abstract void display3();
 }
 
-//abstract class dushra extend abs{ // 5. Your cannot extent one abstract class....remove comment and see...
-//    abstract void cp();
-//}
-
-abstract class dushra{
-    abstract void cp();
-}
-
-class demo extends abs{// 6. Abstract class does not support multiple inheritance...
-                        // class demo extends abs,dushra{...} you will see error...
-    public void display(){
-        System.out.println("may hu demo class may...");
+class demo implements abs1, abs2{
+    public void display1(){
+        System.out.println("I am the first display");
+    }
+    public void display2(){
+        System.out.println("I am the second display");
+    }
+    public void display3(){
+        System.out.println("I am the third display");
     }
 }
 public class Practise {
     public static void main(String[] args) {
-       // abs ab = new abs();// You can not have instance of a abstract class...
-        demo d = new demo();
-        d.display();
-        d.show();
-        abs.dekha();//static method can be called directly no need of creating any instance of a class...
-        d.dekha();//calling static method via object...
-        
-        demo.dekha(); // allowed...
-        System.out.println(d.x);
+       demo d = new demo();
+       d.display1();
+       d.display2();
+       d.display3();
+       
+       System.out.println(abs1.x); // static variable belong to the class and not the object....
+                                   // so d.x `gives you error...and not abs1.x...
+       System.out.println(abs2.x);
+       
     }
 }
+/*
+An abstract method is defined only so that it can be overridden in a subclass. 
+However, static methods can not be overridden. Therefore, it is a compile-time 
+error to have an abstract, static method. ... It's because static methods belongs 
+to a particular class and not to its instance
+*/
