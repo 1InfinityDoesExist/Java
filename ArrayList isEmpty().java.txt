@@ -1,0 +1,26 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+public class CollectionsPractise 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> al = new ArrayList<Integer>(6);// al size you have fixed to 6
+		al.add(2);
+		al.add(4);
+		al.add(14);
+		al.add(24);
+		al.add(19);
+		al.add(35);
+		
+		if(!al.isEmpty())
+		{
+			Iterator<Integer> iter = al.iterator();
+			while(iter.hasNext())
+			{
+				System.out.print(iter.next() + " ");
+			}
+		}
+	}
+}
